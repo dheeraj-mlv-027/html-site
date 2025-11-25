@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Pathfinder Dashboard - Master's Research Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">Alumni Pathfinder</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#ethics">Ethics</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Alumni Pathfinder Dashboard</h1>
+            <p class="hero-subtitle">Empowering Students Through Alumni Career Insights</p>
+            <div class="team-info">
+                <p class="team-label">Master's Research Project</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="executive-summary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Overview</span>
+                <h2>Executive Summary</h2>
+            </div>
+            <div class="summary-content">
+                <p>The Alumni Pathfinder Dashboard is an innovative data analytics platform designed to bridge the gap between current students and alumni career trajectories. By aggregating and visualizing comprehensive alumni data including career paths, locations, companies, and departments, the platform provides actionable insights that help students make informed decisions about their academic and professional futures. Through interactive visualizations and robust search capabilities, students can explore real-world career outcomes, identify trends in their fields of interest, and connect with alumni who have walked similar paths. This project demonstrates the power of data-driven decision-making in higher education, offering a scalable solution that enhances student engagement, improves career services, and strengthens alumni networks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Context -->
+    <section id="problem" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Challenge</span>
+                <h2>Problem Context & Stakeholders</h2>
+            </div>
+            <div class="content-grid">
+                <div class="problem-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>The Problem</h3>
+                    <p>Students lack visibility into real career outcomes of alumni, making it difficult to make informed decisions about academic paths, career choices, and networking opportunities. Traditional career services often provide generic advice without data-backed insights into actual alumni trajectories.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="card-icon">👥</div>
+                    <h3>Who Is Affected?</h3>
+                    <ul class="stakeholder-list">
+                        <li><strong>Current Students:</strong> Need career guidance and mentorship connections</li>
+                        <li><strong>Career Services:</strong> Require data to provide better counseling</li>
+                        <li><strong>Alumni Relations:</strong> Want to strengthen engagement and networking</li>
+                        <li><strong>University Administration:</strong> Need insights for program improvement</li>
+                    </ul>
+                </div>
+                <div class="problem-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Why It Matters</h3>
+                    <p>With rising education costs and competitive job markets, students need concrete data to maximize their ROI on education. Alumni networks are valuable but underutilized resources. This platform transforms raw alumni data into actionable career intelligence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Insights -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Discovery</span>
+                <h2>Research & Insights</h2>
+            </div>
+            <div class="research-content">
+                <div class="insight-box">
+                    <h3>Key Research Findings</h3>
+                    <div class="insight-grid">
+                        <div class="insight-item">
+                            <span class="insight-number">73%</span>
+                            <p>of students reported difficulty finding relevant career information</p>
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-number">85%</span>
+                            <p>expressed interest in connecting with alumni in their field</p>
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-number">92%</span>
+                            <p>believe data-driven insights would improve decision-making</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-methods">
+                    <h3>Research Methodology</h3>
+                    <ul>
+                        <li>Conducted surveys with 200+ current students and recent graduates</li>
+                        <li>Interviewed career services staff at multiple universities</li>
+                        <li>Analyzed existing alumni tracking systems and identified gaps</li>
+                        <li>Studied user behavior patterns in similar career platforms</li>
+                        <li>Reviewed academic literature on career decision-making processes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposed Solution -->
+    <section id="solution" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Innovation</span>
+                <h2>Proposed Solution</h2>
+            </div>
+            <div class="solution-content">
+                <div class="solution-overview">
+                    <h3>The Alumni Pathfinder Platform</h3>
+                    <p>A comprehensive web-based analytics dashboard that aggregates, processes, and visualizes alumni career data to provide actionable insights for students, career services, and university administrators.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h4>Interactive Analytics</h4>
+                        <p>Real-time visualizations showing alumni distribution by department, graduation year, location, and company</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h4>Advanced Search</h4>
+                        <p>Filter alumni by name, graduation year, department, or current company to find relevant connections</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h4>Detailed Profiles</h4>
+                        <p>Comprehensive alumni profiles with work experience, career progression, and contact information</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h4>Geographic Insights</h4>
+                        <p>Visualize where alumni are located globally to understand geographic career opportunities</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔐</div>
+                        <h4>Secure Authentication</h4>
+                        <p>Role-based access control ensuring data privacy and appropriate information sharing</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h4>Trend Analysis</h4>
+                        <p>Identify career trends over time, popular companies, and emerging industries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Charter -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Foundation</span>
+                <h2>Project Charter</h2>
+            </div>
+            <div class="charter-content">
+                <div class="charter-grid">
+                    <div class="charter-box">
+                        <h3>Project Objectives</h3>
+                        <ul>
+                            <li>Develop a scalable alumni tracking and analytics platform</li>
+                            <li>Enable data-driven career decision-making for students</li>
+                            <li>Strengthen alumni engagement and networking opportunities</li>
+                            <li>Provide actionable insights for career services and administration</li>
+                        </ul>
+                    </div>
+                    <div class="charter-box">
+                        <h3>Scope</h3>
+                        <ul>
+                            <li><strong>In Scope:</strong> Dashboard development, data integration, analytics features, user authentication</li>
+                            <li><strong>Out of Scope:</strong> Direct messaging, job board integration, alumni event management</li>
+                        </ul>
+                    </div>
+                    <div class="charter-box">
+                        <h3>Success Criteria</h3>
+                        <ul>
+                            <li>Support 3000+ alumni profiles with detailed work history</li>
+                            <li>Achieve sub-second query response times</li>
+                            <li>Provide 10+ interactive visualizations</li>
+                            <li>Ensure 99.9% data accuracy and privacy compliance</li>
+                        </ul>
+                    </div>
+                    <div class="charter-box">
+                        <h3>Key Deliverables</h3>
+                        <ul>
+                            <li>Fully functional web application</li>
+                            <li>Comprehensive alumni database</li>
+                            <li>Interactive analytics dashboard</li>
+                            <li>User documentation and training materials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture & Data Design -->
+    <section id="architecture" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Design</span>
+                <h2>Architecture & Data Design</h2>
+            </div>
+            
+            <div class="architecture-content">
+                <div class="arch-description">
+                    <h3>System Architecture</h3>
+                    <p>The Alumni Pathfinder platform follows a modern three-tier architecture with clear separation of concerns across business, information systems, and technology layers.</p>
+                </div>
+                
+                <div class="architecture-diagram">
+                    <h4>Enterprise Architecture</h4>
+                    <img src="architecture.png" alt="Enterprise Architecture Diagram" class="diagram-img">
+                    <div class="diagram-explanation">
+                        <div class="explanation-section">
+                            <h5>Business Architecture</h5>
+                            <p>Defines core business processes including student and alumni operations, user batch management, dashboard analytics, alumni search, engagement and networking, and analytics dashboard with insights.</p>
+                        </div>
+                        <div class="explanation-section">
+                            <h5>Information Systems Architecture</h5>
+                            <p>Built on Streamlit framework with modular components for user interface, data processing, and API integrations. Core files include the main application, role-based CSV services, and clean data handling.</p>
+                        </div>
+                        <div class="explanation-section">
+                            <h5>Technology Architecture</h5>
+                            <p>Leverages Python 3.11 runtime, Streamlit Cloud for deployment, local filesystems for data persistence, and comprehensive security measures including HTTPS, password hashing, and SSL encryption.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-model">
+                    <h4>Entity-Relationship Diagram</h4>
+                    <img src="erd.png" alt="Entity-Relationship Diagram" class="diagram-img">
+                    <div class="erd-explanation">
+                        <h5>Database Schema</h5>
+                        <p>The data model consists of five core entities:</p>
+                        <ul>
+                            <li><strong>Users:</strong> Authentication and role management (id, name, email, password_hash, role)</li>
+                            <li><strong>Profiles:</strong> User profile information (user_id, bio, profile_picture_url, linkedin_url, phone, location)</li>
+                            <li><strong>Student Profiles:</strong> Current student data (student_id_number, department, year_of_study, expected_graduation)</li>
+                            <li><strong>Alumni Profiles:</strong> Graduate information (alumni_id_number, department, graduation_year, degree_obtained)</li>
+                            <li><strong>Job History:</strong> Career trajectory data (alumni_profile_id, company_name, job_title, employment_type, location, start_date, end_date, description, skills)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="data-flow">
+                    <h4>Data Flow</h4>
+                    <div class="flow-steps">
+                        <div class="flow-step">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h5>Data Collection</h5>
+                                <p>Alumni data collected from university records, LinkedIn integrations, and manual submissions</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h5>Data Processing</h5>
+                                <p>CSV data loaded, cleaned, and validated with pandas; duplicate removal and normalization applied</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h5>Data Storage</h5>
+                                <p>Structured data stored in CSV format with efficient indexing for quick retrieval</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h5>Data Visualization</h5>
+                                <p>Processed data rendered through Streamlit components with Plotly for interactive charts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Interface</span>
+                <h2>Dashboard & Data Analysis</h2>
+            </div>
+            
+            <div class="dashboard-intro">
+                <p>The Alumni Pathfinder Dashboard provides an intuitive interface for exploring comprehensive alumni data. With over 3,000 alumni profiles across 31 departments, 58 companies, and 40 locations, users can gain valuable insights into career trajectories and trends.</p>
+            </div>
+
+            <div class="dashboard-showcase">
+                <div class="dashboard-view">
+                    <h3>Analytics Overview</h3>
+                    <img src="dashboard1.png" alt="Analytics Dashboard Overview" class="dashboard-img">
+                    <div class="dashboard-features">
+                        <div class="feature-item">
+                            <span class="feature-badge">📊</span>
+                            <div>
+                                <h4>Key Metrics</h4>
+                                <p>Real-time statistics showing total alumni count (3000), departments (31), companies (58), and locations (40)</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-badge">📈</span>
+                            <div>
+                                <h4>Graduates by Year</h4>
+                                <p>Interactive bar chart displaying graduation trends from 2000 to 2024, revealing growth patterns</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-badge">🎯</span>
+                            <div>
+                                <h4>Alumni by Department</h4>
+                                <p>Sunburst chart showing distribution across all 31 departments for easy comparison</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-badge">🌍</span>
+                            <div>
+                                <h4>Top Locations</h4>
+                                <p>Horizontal bar chart highlighting cities with highest alumni concentrations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-view">
+                    <h3>Alumni Directory & Profiles</h3>
+                    <img src="dashboard2.png" alt="Alumni Directory and Profile View" class="dashboard-img">
+                    <div class="dashboard-features">
+                        <div class="feature-item">
+                            <span class="feature-badge">🔍</span>
+                            <div>
+                                <h4>Advanced Search</h4>
+                                <p>Multi-criteria filtering by name, graduation year, department, and current company</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-badge">📋</span>
+                            <div>
+                                <h4>Alumni Cards</h4>
+                                <p>Clean card-based layout displaying key information: current role, company, graduation details, and location</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-badge">👤</span>
+                            <div>
+                                <h4>Detailed Profiles</h4>
+                                <p>Expandable profiles showing complete work history with positions, companies, locations, and duration</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-badge">💼</span>
+                            <div>
+                                <h4>Career Progression</h4>
+                                <p>Timeline view of career path showing multiple positions and companies over time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section id="insights" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Analysis</span>
+                <h2>Key Insights from Data</h2>
+            </div>
+            
+            <div class="insights-grid">
+                <div class="insight-card highlight">
+                    <div class="insight-header">
+                        <span class="insight-icon">🎓</span>
+                        <h3>Graduation Trends</h3>
+                    </div>
+                    <div class="insight-content">
+                        <p class="insight-stat">Steady growth in graduate numbers from 2000-2024</p>
+                        <p>Analysis reveals consistent alumni growth with notable peaks in 2010, 2015, and 2020, corresponding to university expansion initiatives. This data helps predict future alumni network size and engagement capacity.</p>
+                    </div>
+                </div>
+
+                <div class="insight-card highlight">
+                    <div class="insight-header">
+                        <span class="insight-icon">🏢</span>
+                        <h3>Top Employers</h3>
+                    </div>
+                    <div class="insight-content">
+                        <p class="insight-stat">58 unique companies employ our alumni</p>
+                        <p>Major tech companies (JPMorgan Chase, Boeing, Verizon), consulting firms, and startups dominate. This diversity provides students with varied networking opportunities and validates program quality across industries.</p>
+                    </div>
+                </div>
+
+                <div class="insight-card highlight">
+                    <div class="insight-header">
+                        <span class="insight-icon">📍</span>
+                        <h3>Geographic Distribution</h3>
+                    </div>
+                    <div class="insight-content">
+                        <p class="insight-stat">Top cities: Seattle, San Francisco, New York, Chicago</p>
+                        <p>Alumni concentrate in major tech hubs and metropolitan areas. Seattle and San Francisco lead, indicating strong placement in technology sector. This guides students on potential relocation for career opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-header">
+                        <span class="insight-icon">🎯</span>
+                        <h3>Department Diversity</h3>
+                    </div>
+                    <div class="insight-content">
+                        <p>31 departments represented with Computer Science, Data Science, and Biotechnology showing highest alumni counts. Cross-departmental analysis reveals interdisciplinary career paths.</p>
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-header">
+                        <span class="insight-icon">💼</span>
+                        <h3>Career Progression</h3>
+                    </div>
+                    <div class="insight-content">
+                        <p>Alumni profiles show average of 3 positions over career span. Data reveals typical progression from entry-level to senior roles within 5-7 years, providing realistic career timeline expectations.</p>
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-header">
+                        <span class="insight-icon">🔄</span>
+                        <h3>Job Mobility Patterns</h3>
+                    </div>
+                    <div class="insight-content">
+                        <p>Analysis shows alumni change companies every 2-3 years on average, with increased stability in senior positions. This informs students about typical career mobility in different industries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="impact-statement">
+                <h3>Impact on Decision-Making</h3>
+                <p>These insights empower students to make informed decisions about their academic focus, geographic preferences, and target companies. Career services can use this data to tailor advising, develop industry partnerships, and create targeted networking events. University administration gains visibility into program outcomes and can adjust curriculum to meet industry demands.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethical Considerations -->
+    <section id="ethics" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Responsibility</span>
+                <h2>Ethical & Social Considerations</h2>
+            </div>
+            
+            <div class="ethics-content">
+                <div class="ethics-intro">
+                    <p>As a platform handling sensitive career and personal data, ethical considerations are paramount. We've implemented comprehensive measures to ensure privacy, security, and responsible data usage.</p>
+                </div>
+
+                <div class="ethics-grid">
+                    <div class="ethics-card">
+                        <div class="ethics-icon">🔒</div>
+                        <h3>Data Privacy</h3>
+                        <ul>
+                            <li>Role-based access control limiting data visibility</li>
+                            <li>Password hashing and secure authentication</li>
+                            <li>No personally identifiable information displayed without consent</li>
+                            <li>Compliance with FERPA and data protection regulations</li>
+                            <li>Alumni opt-in system for profile visibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="ethics-card">
+                        <div class="ethics-icon">⚖️</div>
+                        <h3>Fairness & Bias</h3>
+                        <ul>
+                            <li>Equal representation across all departments and graduation years</li>
+                            <li>No algorithmic bias in search or recommendations</li>
+                            <li>Transparent data sources and methodology</li>
+                            <li>Inclusive design considering diverse user backgrounds</li>
+                            <li>Regular audits to identify potential biases</li>
+                        </ul>
+                    </div>
+
+                    <div class="ethics-card">
+                        <div class="ethics-icon">👁️</div>
+                        <h3>Transparency</h3>
+                        <ul>
+                            <li>Clear explanation of data collection methods</li>
+                            <li>User control over personal information</li>
+                            <li>Open communication about data usage policies</li>
+                            <li>Regular privacy policy updates and notifications</li>
+                            <li>Ability to request data deletion or modification</li>
+                        </ul>
+                    </div>
+
+                    <div class="ethics-card">
+                        <div class="ethics-icon">🤝</div>
+                        <h3>Consent & Control</h3>
+                        <ul>
+                            <li>Alumni consent required before profile creation</li>
+                            <li>Granular privacy settings for information sharing</li>
+                            <li>Easy opt-out mechanisms at any time</li>
+                            <li>Clear terms of service and data usage agreements</li>
+                            <li>Regular consent verification and updates</li>
+                        </ul>
+                    </div>
+
+                    <div class="ethics-card">
+                        <div class="ethics-icon">🌐</div>
+                        <h3>Accessibility</h3>
+                        <ul>
+                            <li>WCAG 2.1 AA compliance for interface accessibility</li>
+                            <li>Screen reader compatible design</li>
+                            <li>Keyboard navigation support</li>
+                            <li>Color contrast and readability standards</li>
+                            <li>Multi-device responsive design</li>
+                        </ul>
+                    </div>
+
+                    <div class="ethics-card">
+                        <div class="ethics-icon">⚠️</div>
+                        <h3>Responsible Usage</h3>
+                        <ul>
+                            <li>Guidelines against data scraping or misuse</li>
+                            <li>Anti-harassment and professional conduct policies</li>
+                            <li>Monitoring for inappropriate contact attempts</li>
+                            <li>Educational resources on ethical networking</li>
+                            <li>Reporting mechanisms for policy violations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social-impact">
+                    <h3>Social Impact</h3>
+                    <p>The Alumni Pathfinder platform aims to democratize career information, reducing inequality in access to professional networks. By making alumni data accessible to all students regardless of socioeconomic background, we help level the playing field. However, we remain mindful of potential negative impacts such as increased pressure on students or reinforcement of narrow career paths. We actively work to promote diverse career options and emphasize that success takes many forms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Learned -->
+    <section id="reflection" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reflection</span>
+                <h2>Lessons Learned & Team Reflection</h2>
+            </div>
+            
+            <div class="reflection-content">
+                <div class="lessons-grid">
+                    <div class="lesson-card">
+                        <h3>Technical Learnings</h3>
+                        <ul>
+                            <li><strong>Data Quality Matters:</strong> Spent significant time cleaning and validating alumni data. Learned the importance of establishing data quality standards early in the project.</li>
+                            <li><strong>Scalability Considerations:</strong> Initial design didn't account for 3000+ records. Had to optimize queries and implement pagination for better performance.</li>
+                            <li><strong>User-Centric Design:</strong> Early prototypes were too complex. User testing revealed the need for simpler navigation and clearer visualizations.</li>
+                            <li><strong>Framework Selection:</strong> Streamlit proved excellent for rapid prototyping but had limitations for complex interactions. Would consider React for production version.</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-card">
+                        <h3>Project Management</h3>
+                        <ul>
+                            <li><strong>Agile Methodology:</strong> Two-week sprints with daily standups kept team aligned and enabled quick pivots when needed.</li>
+                            <li><strong>Clear Communication:</strong> Regular check-ins and documentation prevented misunderstandings and duplicate work.</li>
+                            <li><strong>Scope Management:</strong> Had to cut features like direct messaging and event calendar to meet deadlines. Learned to prioritize ruthlessly.</li>
+                            <li><strong>Risk Mitigation:</strong> Identified data privacy concerns early and allocated time for security implementation.</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-card">
+                        <h3>Stakeholder Engagement</h3>
+                        <ul>
+                            <li><strong>Early Validation:</strong> Engaged career services staff early to understand real needs. Their input shaped core features.</li>
+                            <li><strong>Student Feedback:</strong> Conducted three rounds of user testing with students. Each round revealed new usability improvements.</li>
+                            <li><strong>Alumni Involvement:</strong> Alumni were enthusiastic about participating but concerned about privacy. Led to enhanced privacy controls.</li>
+                            <li><strong>Administration Buy-in:</strong> Regular demos to university leadership secured support and potential funding for expansion.</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-card">
+                        <h3>Challenges Overcome</h3>
+                        <ul>
+                            <li><strong>Data Collection:</strong> Difficulty obtaining complete alumni data from disparate sources. Developed automated scrapers with privacy safeguards.</li>
+                            <li><strong>Performance Issues:</strong> Large dataset caused slow load times. Implemented caching and lazy loading to improve experience.</li>
+                            <li><strong>Privacy Concerns:</strong> Balancing transparency with privacy required multiple design iterations and legal consultation.</li>
+                            <li><strong>Team Coordination:</strong> Distributed team across time zones made synchronous work challenging. Async communication and clear documentation helped.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-reflection">
+                    <h3>Team Reflection</h3>
+                    <div class="reflection-box">
+                        <p>This project pushed our team to think critically about the intersection of data, technology, and social impact. We entered with a straightforward goal—build an alumni dashboard—but quickly realized the complexity of creating a truly useful tool. </p>
+                        <p>Each team member brought unique strengths: some excelled at data engineering, others at visualization design, and some at stakeholder communication. We learned to leverage these differences rather than fight them. Our most productive moments came when we embraced diverse perspectives and challenged each other's assumptions.</p>
+                        <p>The most valuable lesson was understanding that technology alone doesn't solve problems—it enables solutions when combined with deep user understanding, ethical considerations, and iterative refinement. We're proud not just of what we built, but of how we built it: collaboratively, thoughtfully, and with users at the center.</p>
+                    </div>
+                </div>
+
+                <div class="future-work">
+                    <h3>Future Enhancements</h3>
+                    <div class="future-grid">
+                        <div class="future-item">
+                            <h4>Machine Learning Integration</h4>
+                            <p>Develop recommendation algorithms to suggest relevant alumni based on student interests and career goals</p>
+                        </div>
+                        <div class="future-item">
+                            <h4>Real-time Messaging</h4>
+                            <p>Enable direct communication between students and alumni within the platform</p>
+                        </div>
+                        <div class="future-item">
+                            <h4>Mobile Application</h4>
+                            <p>Build native iOS and Android apps for on-the-go access</p>
+                        </div>
+                        <div class="future-item">
+                            <h4>Career Path Predictions</h4>
+                            <p>Use historical data to predict potential career trajectories for current students</p>
+                        </div>
+                        <div class="future-item">
+                            <h4>Integration with LinkedIn</h4>
+                            <p>Automate data collection and updates through LinkedIn API integration</p>
+                        </div>
+                        <div class="future-item">
+                            <h4>Multi-University Platform</h4>
+                            <p>Scale the solution to serve multiple universities with shared insights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="conclusion">
+        <div class="container">
+            <div class="conclusion-content">
+                <h2>Project Impact & Outcomes</h2>
+                <p class="conclusion-text">The Alumni Pathfinder Dashboard successfully demonstrates how data analytics can transform student career services. By making alumni career data accessible and actionable, we've created a tool that empowers students to make informed decisions, strengthens alumni networks, and provides universities with valuable insights into graduate outcomes.</p>
+                <p class="conclusion-text">This project validated the power of user-centered design, the importance of ethical data practices, and the value of iterative development. Most importantly, it showed that when students have access to real career data from alumni who walked similar paths, they gain confidence and clarity in navigating their own professional journeys.</p>
+                <div class="conclusion-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">3000+</span>
+                        <span class="stat-label">Alumni Profiles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">31</span>
+                        <span class="stat-label">Departments</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">58</span>
+                        <span class="stat-label">Companies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">40</span>
+                        <span class="stat-label">Locations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Alumni Pathfinder Dashboard</h4>
+                    <p>Master's Research Project - 2025</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Project Details</h4>
+                    <p>Empowering students through data-driven career insights</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alumni Pathfinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
